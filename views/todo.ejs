@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> todolist </title>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <link href = "/assets/styles.css" rel = "stylesheet" text ="text/css"/ >
+</head>
+<body>
+  <h1> ToDo List </h1>
+  <div id="todo-table">
+    <form>
+      <input type="text" name ="item" placeholder="add new item..." required/>
+      <button type="submit">Add item</button>
+    </form>
+    <ul>
+      <% for(var i = 0 ;i< todos.length;i++) { %>
+      <li><%= todos[i].item %></li>
+      <% } %>
+    </ul>
+  </div>
+  <script src = "/assets/todo-list.js"></script>
+  <footer style="position: absolute; bottom : 5px"> Author: Rohit Kumar Singh</footer>
+</body>
+</html>
